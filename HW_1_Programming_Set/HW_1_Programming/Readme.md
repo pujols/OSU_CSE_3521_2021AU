@@ -41,7 +41,7 @@ python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 ```
 
-## Possible errors and notes
+### Possible errors and notes
 If you're unable to run `pacman.py` or get its graphics to work, or if you're getting an error about "tkinter" or "_tkinter", that's okay. As long as you can run autograder.py, you should be able to complete the assignment fully. 
 
 We note that, the provided commands are designed to work with Mac/Linux with Python version 3. If you use Windows (like me!), we recommend that you run the code in the Windows command line (CMD), and make the following changes: 
@@ -50,7 +50,7 @@ We note that, the provided commands are designed to work with Mac/Linux with Pyt
 * We suggest that you run the code on Command Line. You may use editors like PyCharm to write your code.
 
 
-## Implementation
+### Implementation
 * Please implement the "graph" search version, not the tree search version of each algorithm. That is, you will create a closeset, and you will not expand the already expanded states again.
 
 * Once you finish your implementation, you can execute the autograder by
