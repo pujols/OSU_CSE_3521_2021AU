@@ -23,7 +23,7 @@ Download or clone this repository. This code, and the idea for the assignment, c
 
 * Open up the Windows Command Line or Mac Terminal or Linux Terminal.
 
-* Change your directory to the folder with the pacman code. You should see a file called `commands.txt` and four folders: `py`, `layouts`, `test_cases` and `images`.
+* Change your directory to the folder with the pacman code. You should see a file called `commands.txt` and four folders: `py`, `layouts`, `test_cases` and `images`. You will also see a PPT file `HW1_introduction.pptx`, which I will go through in the lecture.
 
 * Run some of these commands (as listed in `commands.txt`) to make sure your setup works. Below are some examples:
 
