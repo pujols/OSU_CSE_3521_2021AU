@@ -61,8 +61,6 @@ We note that, the provided commands are designed to work with Mac/Linux with Pyt
 python3 py/autograder.py
 ```
 
-* If you use Python version 3.8+ and face problems with `py/autograder.py`, you may change line 20 of `py/grading.py` from "import cgi"  to "import html as cgi".
-
 
 ## Task 1 (10 pts): Depth-First Search (DFS)
 
