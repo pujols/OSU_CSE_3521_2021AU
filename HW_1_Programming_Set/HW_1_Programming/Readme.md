@@ -51,22 +51,27 @@ We note that, the provided commands are designed to work with Mac/Linux with Pyt
 
 
 ## Implementation
+* Please use python3 and write your own solutions from scratch. Do not import any packages yourself except for those we have included and specified.
+
 * Please implement the "graph" search version, not the tree search version of each algorithm. That is, you will create a closeset, and you will not expand the already expanded states again.
 
-* Please use python3 and write your own solutions from scratch. Do not import any packages yourself except for those we have included and specified.
+* In defining the close-set, please simply create a "set" (or "list") and insert visited/expanded states into the close-set by yourself. There is a "self.expanded" variable in `searchagent.py`, but we highly suggest that you do NOT use that variable since our grading script may not check it.
 
 * Once you finish your implementation, you can execute the autograder by
 
 ```
 python3 py/autograder.py
 ```
+* The full grade shown in the autograder is 35, while the full grade of your programming part is 50.
 
 
-## Task 1 (10 pts): Depth-First Search (DFS)
+## Task 1 (12.5 pts): Depth-First Search (DFS)
 
 Open the file `py/search.py` and find the function [`depthFirstSearch`](./py/search.py#L70). 
 
 Take the provided template and finish the code so that depth-first search works. To do so, please first check the class [`SearchProblem`](./py/search.py#L16). This class outlines the structure of a search problem. It provides functions like `getStartState`, `isGoalState` (i.e., goal test), `getSuccessors`, and `getCostOfActions`. In your implementation, you will be using these functions to get necessary information about the search problem. Please note that, this is a abstract class that we put here to help you understand a search problem. The detail of the class is implemented in some other .py files by us already.
+
+We suggest that you put the successors into the fringe in either the right-to-left or left-to-right fashion, not the others.
 
 You can test it with pacman by running the following command: 
 
@@ -74,11 +79,11 @@ You can test it with pacman by running the following command:
 python3 py/pacman.py -l mediumMaze -p SearchAgent -a fn=dfs
 ```
 
-## Task 2 (10 pts): Breadth-First Search (BFS)
+## Task 2 (12.5 pts): Breadth-First Search (BFS)
 
 Open the file `py/search.py` and and find the function [`breadthFirstSearch`](./py/search.py#L90). 
 
-Take the template and finish the BFS alorithm.  
+Take the template and finish the BFS alorithm. We suggest that you put the successors into the fringe in either the right-to-left or left-to-right fashion, not the others. 
 
 You can test it with pacman by running the following command: 
 
@@ -89,7 +94,7 @@ python3 py/pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
 (Note that this should be simple if you've completed Task 1.)
 
 
-## Task 3 (10 pts): Uniform Cost Search (UCS)
+## Task 3 (12.5 pts): Uniform Cost Search (UCS)
 
 Open the file `py/search.py` and find the function  [`uniformCostSearch`](./py/search.py#L96). 
 
@@ -122,7 +127,7 @@ print(best)
 Alternatively, you can use the `PriorityQueue` data structures provided to you in `py/util.py`!
 
 
-## Task 4 (10 pts): A* Search
+## Task 4 (12.5 pts): A* Search
 
 Open the file `py/search.py` and find the function  [`aStarSearch`](./py/search.py#L109). 
 
