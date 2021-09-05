@@ -2,17 +2,18 @@
 
 ## Submission instructions
 
-* Due date and time: September 21st (Monday), 11:59 pm ET
+* Due date and time: September 21st (Tuesday), 11:59 pm ET
 
 * Expected time commitment: 4-8 hrs
 
 * Carmen submission: 
-1) Submit one .py file with the search algorithms you implemented: `search.py`
-2) Submit a `collaboration.txt` and list with whom you have discussed about the homework (see more details below). 
+Submit one .zip file named HW1_programming_name_number.zip (e.g., HW1_programming_chao_209.zip), which contains
+1) a .py file with the search algorithms you implemented: `search.py`;
+2) a `collaboration.txt` which lists with whom you have discussed the homework (see more details below). 
 
 Please use python3 and write your own solutions from scratch. Do not import any packages yourself except for those we have included and specified.
 
-* Collaboration: You may discuss with your classmates. However, you need to write your own solutions and submit separately. In your submission, you need to list with whom you have discussed about the homework in a .txt file `collaboration.txt`. Please list each classmate’s name.number (e.g., chao.209) as a row in the .txt file. That is, if you discussed with two classmates, your .txt file will have two rows. If you did not discuss with your classmates, just submit an empty `collaboration.txt`. Please consult the syllabus for what is and is not acceptable collaboration.
+* Collaboration: You may discuss with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework in a .txt file `collaboration.txt`. Please list each classmate’s name.number (e.g., chao.209) as a row in the .txt file. That is, if you discussed with two classmates, your .txt file will have two rows. If you did not discuss with your classmates, just write "no discussion" in `collaboration.txt`. Please consult the syllabus for what is and is not an acceptable collaboration.
 
 
 ## Introduction
