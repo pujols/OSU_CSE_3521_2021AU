@@ -19,8 +19,6 @@ Submit one .zip file named HW1_programming_name_number.zip (e.g., HW1_programmin
 
 In this homework, you are to implement four search algorithms --- DFS, BFS, UCS, and A* --- so that a pacman planning agent can complete the search problem. You are to implement the "graph" search rather than the "tree" search version.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_1_Programming_Set/HW_1_Programming/images/pacman.png)
-
 Download or clone this repository. This code, and the idea for the assignment, comes from [UC Berkeley](https://inst.eecs.berkeley.edu//~cs188/pacman/home.html).
 
 * Open up the Windows Command Line or Mac Terminal or Linux Terminal.
@@ -68,7 +66,7 @@ python3 py/autograder.py
 
 Open the file `py/search.py` and find the function [`depthFirstSearch`](./py/search.py#L70). 
 
-Take the provided template and finish the code so that depth-first search works. 
+Take the provided template and finish the code so that depth-first search works. To do so, please first check the class [`SearchProblem`](./py/search.py#L16). This class outlines the structure of a search problem. It provides functions like `getStartState`, `isGoalState` (i.e., goal test), `getSuccessors`, and `getCostOfActions`. In your implementation, you will be using these functions to get necessary information about the search problem. Please note that, this is a abstract class that we put here to help you understand a search problem. The detail of the class is implemented in some other .py files by us already.
 
 You can test it with pacman by running the following command: 
 
@@ -128,7 +126,7 @@ Alternatively, you can use the `PriorityQueue` data structures provided to you i
 
 Open the file `py/search.py` and find the function  [`aStarSearch`](./py/search.py#L109). 
 
-Finish the implementation of A* search. You can use the argument heuristic as a function: `dist = heuristic(state, problem)`. That is, try `h_start = heuristic(problem.getStartState(), problem); print(h_start)` 
+Finish the implementation of A* search. You can use the argument heuristic as a function: `dist = heuristic(state, problem)`. That is, try `h_start = heuristic(problem.getStartState(), problem); print(h_start)`. The class [`nullHeuristic`](./py/search.py#L102) outlines the input and output of a heuristic function. We have implemented the heuristic funcstions.
 
 You can test it with pacman by running the following command: 
 
