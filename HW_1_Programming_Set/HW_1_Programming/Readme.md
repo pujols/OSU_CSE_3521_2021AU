@@ -19,6 +19,8 @@ Please use python3 and write your own solutions from scratch. Do not import any 
 
 ## Introduction
 
+In this homework, you are to implement four search algorithms --- DFS, BFS, UCS, and A* --- so that a pacman planning agent can complete the search problem. You are to implement the "graph" search rather than the "tree" search version.
+
 Download or clone this repository. This code, and the idea for the assignment, comes from [UC Berkeley](https://inst.eecs.berkeley.edu//~cs188/pacman/home.html).
 
 * Open up the Windows Command Line or Mac Terminal or Linux Terminal.
