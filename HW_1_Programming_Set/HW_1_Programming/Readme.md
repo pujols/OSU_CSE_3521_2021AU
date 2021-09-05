@@ -12,8 +12,6 @@ Submit one .zip file named HW1_programming_name_number.zip (e.g., HW1_programmin
 1) a .py file with the search algorithms you implemented: `search.py`;
 2) a `collaboration.txt` which lists with whom you have discussed the homework (see more details below). 
 
-Please use python3 and write your own solutions from scratch. Do not import any packages yourself except for those we have included and specified.
-
 * Collaboration: You may discuss with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework in a .txt file `collaboration.txt`. Please list each classmate’s name.number (e.g., chao.209) as a row in the .txt file. That is, if you discussed with two classmates, your .txt file will have two rows. If you did not discuss with your classmates, just write "no discussion" in `collaboration.txt`. Please consult the syllabus for what is and is not an acceptable collaboration.
 
 
@@ -52,8 +50,10 @@ We note that, the provided commands are designed to work with Mac/Linux with Pyt
 * We suggest that you run the code on Command Line. You may use editors like PyCharm to write your code.
 
 
-### Implementation
+## Implementation
 * Please implement the "graph" search version, not the tree search version of each algorithm. That is, you will create a closeset, and you will not expand the already expanded states again.
+
+* Please use python3 and write your own solutions from scratch. Do not import any packages yourself except for those we have included and specified.
 
 * Once you finish your implementation, you can execute the autograder by
 
@@ -61,7 +61,7 @@ We note that, the provided commands are designed to work with Mac/Linux with Pyt
 python3 py/autograder.py
 ```
 
-If you use Python version 3.8+ and face problems with `py/autograder.py`, you may change line 20 of `py/grading.py` from "import cgi"  to "import html as cgi".
+* If you use Python version 3.8+ and face problems with `py/autograder.py`, you may change line 20 of `py/grading.py` from "import cgi"  to "import html as cgi".
 
 
 ## Task 1 (10 pts): Depth-First Search (DFS)
