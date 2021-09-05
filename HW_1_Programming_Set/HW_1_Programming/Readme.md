@@ -1,5 +1,6 @@
 # Homework 1
 
+
 ## Submission instructions
 
 * Due date and time: September 21st (Tuesday), 11:59 pm ET
@@ -39,6 +40,19 @@ python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 ```
 python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 ```
+
+
+## Possible errors and notes
+If you're unable to run `pacman.py` or get its graphics to work, or if you're getting an error about "tkinter" or "_tkinter", that's okay.
+---> As long as you can run autograder.py you should be able to complete the assignment fully.
+
+We note that, the provided commands are designed to work with Mac/Linux with Python version 3. If you use Windows (like me!), we recommend that you run the code in the Windows command line (CMD). You may use `py -3` instead of python3 to run the code. You may use editors like PyCharm to write your code.
+
+* You should use `\` instead of `/` while specifying the path to the file.
+* Example command that works for us: `py -3 py\autograder.py`.
+
+
+
 
 ### Implementation
 * Please implement the "graph" search version, not the tree search version of each algorithm. That is, you will create a closeset, and you will not expand the already expanded states again.
