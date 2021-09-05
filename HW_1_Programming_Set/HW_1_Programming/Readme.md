@@ -19,7 +19,7 @@ Submit one .zip file named HW1_programming_name_number.zip (e.g., HW1_programmin
 
 In this homework, you are to implement four search algorithms --- DFS, BFS, UCS, and A* --- so that a pacman planning agent can complete the search problem. You are to implement the "graph" search rather than the "tree" search version.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_1_Porgramming_Set/HW_1_Programming/images/pacman.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_1_Programming_Set/HW_1_Programming/images/pacman.png)
 
 Download or clone this repository. This code, and the idea for the assignment, comes from [UC Berkeley](https://inst.eecs.berkeley.edu//~cs188/pacman/home.html).
 
