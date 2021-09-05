@@ -17,7 +17,7 @@ Submit one .zip file named HW1_programming_name_number.zip (e.g., HW1_programmin
 
 ## Introduction
 
-In this homework, you are to implement four search algorithms --- DFS, BFS, UCS, and A* --- so that a pacman planning agent can complete the search problem. You are to implement the "graph" search rather than the "tree" search version.
+In this homework, you are to implement four search algorithms --- DFS, BFS, UCS, and A* --- in `search.py` so that a pacman planning agent can complete the search problem. You are to implement the "graph" search rather than the "tree" search version.
 
 Download or clone this repository. This code, and the idea for the assignment, comes from [UC Berkeley](https://inst.eecs.berkeley.edu//~cs188/pacman/home.html).
 
@@ -50,7 +50,7 @@ We note that, the provided commands are designed to work with Mac/Linux with Pyt
 * We suggest that you run the code on Command Line. You may use editors like PyCharm to write your code.
 
 
-## Implementation
+## Implementation (in `search.py`)
 * Please use python3 and write your own solutions from scratch. Do not import any packages yourself except for those we have included and specified.
 
 * Please implement the "graph" search version, not the tree search version of each algorithm. That is, you will create a closeset, and you will not expand the already expanded states again.
