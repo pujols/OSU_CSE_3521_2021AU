@@ -66,6 +66,8 @@ python3 py/autograder.py
 ```
 * The full grade shown in the autograder is 35, while the full grade of your programming part is 50.
 
+* Please also read **Other information** at the end of this page for some other hints. 
+
 
 ## Task 1 (12.5 pts): Depth-First Search (DFS)
 
