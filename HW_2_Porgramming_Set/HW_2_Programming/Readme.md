@@ -20,7 +20,7 @@ Submit one .zip file named HW2_programming_name_number.zip (e.g., HW2_programmin
 
 * Download or clone this repository.
 
-* You will see four python scripts: `DR.py`, `LR.py`, `feature_normalization.py`, and `numpy_example.py`.
+* You will see four python scripts: `DR.py`, `LR.py`, `feature_normalization.py`, and `numpy_example.py`. You will also see `collaboration.txt`.
 
 * You will see a `data` folder, which contains `mnist_test.csv`, `Linear.npz`, `Quadratic.npz`, and `Swiss_Roll.npz`.
 
@@ -51,16 +51,16 @@ In this homework, you are to implement principal component analysis (PCA) for di
 
 * In Question 1, you will play with Swiss Roll data, MNIST (digit data), and some other toy datasets.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_5521_2020AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss.png)
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_5521_2020AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Digits.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Digits.png)
 
 
 * In Question 2, you will play with simple linear and quadratic data (x-axis is the feature variable; y-axis is the real-value label; each point is a data instance: red for training and blue for testing) and some other toy datasets.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_5521_2020AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/linear_1.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/linear_1.png)
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_5521_2020AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/quadratic_2.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/quadratic_2.png)
 
 
 # Question 0: Exercise
@@ -120,7 +120,7 @@ This command will run PCA on a simple angle shape data in 3D and project it to 2
 `python3 DR.py --data MNIST --method PCA --out_dim 2 --display --save`<br/>
 This command will run PCA on 1010 digit images of digit "3". The size of each image is 28-by-28, or equivalently a 784-dimensional vector. We are to perform PCA to reduce its dimensionality (e.g., to 2) and then use the two dimensions to reconstruct the 28-by-28 image. You will see a figure showing multiple images. The leftmost image is the mean image. The second to the right and the rightmost images are one original "3" image and the reconstructed image. The middle images show you the projections (here there are two projections). Note that, in doing PCA, we vectorize an image and get a mean vector and a projection matrix with several principal components. Then to display them, we then reshape them back to images.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_5521_2020AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/MNIST.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/MNIST.png)
 
 * The code will generate `MNIST_2.png` and `Results_MNIST_2.npz`, which you will include in your submission.
 
@@ -132,7 +132,7 @@ This command will run PCA on 1010 digit images of digit "3". The size of each im
 `python3 DR.py --data Swiss_Roll --method PCA --out_dim 2 --display --save`<br/>
 This command will run PCA on the 3D Swiss Roll dataset to reduce the dimensionality to 2D. You will see the resulting mean vector and projection matrix being displayed in your command line. You will also see a figure showing the data before and after PCA. Points of similar colors mean that they are similar (following the Swiss Roll shape in and out). You will see that PCA cannot preserve the similarity. This is because that PCA can only do linear projection: simply flatten the roll but not unfold it.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_5521_2020AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss_Roll.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss_Roll.png)
 
 * The code will generate `Swiss_Roll_2.png` and `Results_Swiss_Roll_2.npz`, which you will include in your submission.
 
@@ -152,7 +152,7 @@ Above you see that PCA cannot preserve the similarity (neighbors) along with the
 `python3 DR.py --data Swiss_Roll --method LE --out_dim 2 --display`<br/>
 This command will run LE on the 3D Swiss Roll dataset to reduce the dimensionality to 2D. You will also see a figure showing the data before and after LE. Points of similar colors mean that they are similar (following the Swiss Roll shape in and out). You will see that LE can preserve the similarity, unfolding the roll.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_5521_2020AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss_LE.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss_LE.png)
 
 * You do not need to submit anything for this extension.
 
