@@ -2,16 +2,19 @@
 
 ## Submission instructions
 
-* Due date and time: October 12st (Monday), 11:59 pm ET
+* Due date and time: October 12st (Tuesday), 11:59 pm ET
+
+* Expected time commitment: 10 hrs
 
 * Carmen submission: 
-Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`) with the following files
+Submit one .zip file named HW2_programming_name_number.zip (e.g., HW2_programming_chao_209.zip), which contains
   - your completed python script `DR.py` (for dimensionality reduction - Question 1)
   - your completed python script `LR.py` (for linear regression - Question 2)
   - your 6 generated results for Question 1: `MNIST_2.png`, `Swiss_Roll_2.png`, `toy_data_2.png`, `Results_MNIST_2.npz`, `Results_Swiss_Roll_2.npz`, and `Results_toy_data_2.npz`.
   - your 4 generated results for Question 2: `linear_1.png`, `quadratic_2.png`, `Results_linear_1.npz`, and `Results_quadratic_2.npz`
+  - a `collaboration.txt` which lists with whom you have discussed the homework (see more details below). 
 
-* Collaboration: You may discuss the homework with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework. Please list each classmate’s name and name.number (e.g., Wei-Lun Chao, chao.209) as a row at the end of `LR.py` and `DR.py`. That is, if you discussed with two classmates, your .txt file will have two rows. Please consult the syllabus for what is and is not acceptable collaboration.
+* Collaboration: You may discuss the homework with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework in a .txt file `collaboration.txt`. Please list each classmate’s name and name.number (e.g., Wei-Lun Chao, chao.209) as a row in the .txt file. That is, if you discussed with two classmates, your .txt file will have two rows. If you did not discuss with your classmates, just write "no discussion" in `collaboration.txt`. Please consult the syllabus for what is and is not an acceptable collaboration.
 
 ## Implementation instructions
 
