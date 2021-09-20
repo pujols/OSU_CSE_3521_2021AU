@@ -303,9 +303,3 @@ if __name__ == '__main__':
     parser.add_argument('--auto_grade', action='store_true', default=False)
     args = parser.parse_args()
     main(args)
-
-    # Fill in the other students you collaborate with:
-    # e.g., Wei-Lun Chao, chao.209
-    #
-    #
-    #
