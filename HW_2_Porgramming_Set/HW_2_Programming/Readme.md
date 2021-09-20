@@ -51,7 +51,7 @@ In this homework, you are to implement principal component analysis (PCA) for di
 
 * In Question 1, you will play with Swiss Roll data, MNIST (digit data), and some other toy datasets.
 
-![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/tree/main/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss.png)
+![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/main/HW_2_Porgramming_Set/HW_2_Programming/for_display/Swiss.png)
 
 ![Alt text](https://github.com/pujols/OSU_CSE_3521_2021AU/blob/master/HW_2_Porgramming_Set/HW_2_Programming/for_display/Digits.png)
 
