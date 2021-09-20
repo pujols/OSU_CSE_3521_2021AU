@@ -30,7 +30,7 @@ Submit one .zip file named HW2_programming_name_number.zip (e.g., HW2_programmin
 
 * **Caution! python and NumPy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.**
 
-* If you use Windows, we recommend that you run the code in the Windows command line. You may use `py -3` instead of `python3` to run the code.
+* We note that, the provided commands are designed to work with Mac/Linux with Python version 3. If you use Windows (like me!), we recommend that you run the code in the Windows command line (CMD). You may use `py -3` instead of `python3` to run the code. You may use editors like PyCharm to write your code.
 
 * Caution! Please do not import packages (like scikit learn) that are not listed in the provided code. Follow the instructions in each question strictly to code up your solutions. Do not change the output format. Do not modify the code unless we instruct you to do so. (You are free to play with the code but your submitted code should not contain those changes that we do not ask you to do.) A homework solution that does not match the provided setup, such as format, name, initializations, etc., will not be graded. It is your responsibility to make sure that your code runs with the provided commands and scripts.
 
@@ -78,7 +78,7 @@ In this homework, you are to implement principal component analysis (PCA) for di
 * Caution! python and NumPy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.
 
 
-# Question 1: Dimensionality reduction (50 pts)
+# Question 1: Dimensionality reduction (25 pts)
 
 * You will implement PCA in this question. You are to amend your implementation into `DR.py`.
 
@@ -87,7 +87,7 @@ In this homework, you are to implement principal component analysis (PCA) for di
   - Learning patterns: `mu, W = PCA(np.copy(X), out_dim)`, in which the code takes `X` and the desired output dimensions as input and output the mean vector `mu` and the projection matrix (numpy array) `W`.
   - Apply the learned patterns to the data: which will be part of your job to implement.
   
-## Coding:
+## Coding (15/25 pts):
 
 You have two parts to implement in `DR.py`:
 
@@ -103,7 +103,7 @@ Note that, the auto grader is to check your implementation semantics. If you hav
 
 * Again, the auto_grader is just to simply check your implementation for a toy case. It will not be used for your final grading.
 
-## Play with different datasets (Task 1 - toy data):
+## Play with different datasets (Task 1 - toy data, 3/25 pts):
 
 * Please run the following command<br/>
 `python3 DR.py --data toy_data --method PCA --out_dim 2 --display --save`<br/>
@@ -114,7 +114,7 @@ This command will run PCA on a simple angle shape data in 3D and project it to 2
 * You may play with other commands by (1) removing `--save` (2) changing the `--out_dim 2` to 1. You may also remove `--display` if you don't want to display the figure.
 
 
-## Play with different datasets (Task 2 - MNIST):
+## Play with different datasets (Task 2 - MNIST, 3/25 pts):
 
 * Please run the following command<br/>
 `python3 DR.py --data MNIST --method PCA --out_dim 2 --display --save`<br/>
@@ -126,7 +126,7 @@ This command will run PCA on 1010 digit images of digit "3". The size of each im
 
 * You may play with other commands by (1) removing `--save` (2) changing the `--out_dim 2` to some other non-negative integers (e.g., 1, 3, 4, 200). You will see that the reconstructed images get closer to the original image when out_dim approaches 784. 
 
-## Play with different datasets (Task 3 - Swiss Roll):
+## Play with different datasets (Task 3 - Swiss Roll, 4/25 pts):
 
 * Please run the following command<br/>
 `python3 DR.py --data Swiss_Roll --method PCA --out_dim 2 --display --save`<br/>
@@ -158,16 +158,16 @@ This command will run LE on the 3D Swiss Roll dataset to reduce the dimensionali
 
 
 
-# Question 2: Linear regression (50 pts)
+# Question 2: Linear regression (25 pts)
 * You will implement linear regression in this question. You are to amend your implementation into `LR.py`.
 
 * There are many sub-functions in `LR.py`. You can ignore all of them but `def linear_regression(X, Y)` and `def main(args)`. In `main(args)`, you will see a general pipeline of machine learning: <br/>
-  - Loading data: `X_original, Y = data_loader(args)`, in which `X` is a 1-by-N matrix (numpy array) and each column is a data instance. You can type `X[:, 0]` to extract the "first" data instance from `X`. (Caution! python and numpy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.) <br/>
-  - Feature transform: `X = polynomial_transform(np.copy(X_original), args.polynomial)` extends each column of `X` to its polynomial representation. For example, given x, this transform will extends it to [x, x^2, ..., x^(args.polynomial)]^T.
+  - Loading data: `X_original, Y = data_loader(args)`, in which `X_original` is a 1-by-N matrix (numpy array) and each column is a data instance. You can type `X_original[:, 0]` to extract the "first" data instance from `X_original`. (Caution! python and numpy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.) <br/>
+  - Feature transform: `X = polynomial_transform(np.copy(X_original), args.polynomial)` extends each column of `X_original` to its polynomial representation. For example, given a scalar x, this transform will extends it to [x, x^2, ..., x^(args.polynomial)]^T.
   - Learning patterns: `w, b = linear_regression(X, Y)`, in which the code takes `X` and the desired labels `Y` as input and output the weights `w` and the bias `b`.
   - Apply the learned patterns to the data: `training_error = np.mean((np.matmul(w.transpose(), X) + b - Y.transpose()) ** 2)` and `test_error = np.mean((np.matmul(w.transpose(), X_test) + b - Y_test.transpose()) ** 2)` compute the training and test error.
   
-## Coding:
+## Coding (15/25 pts):
 
 You have one part to implement in `LR.py`:
 
@@ -181,7 +181,7 @@ Note that, the auto grader is to check your implementation semantics. If you hav
 
 * Again, the auto_grader is just to simply check your implementation for a toy case. It will not be used for your final grading.
 
-## Play with different datasets (Task 1 - linear data):
+## Play with different datasets (Task 1 - linear data, 5/25 pts):
 
 * Please run the following command<br/>
 `python3 LR.py --data linear --polynomial 1 --display --save`<br/>
@@ -189,10 +189,9 @@ This command will run linear regression on a 1D linear data (the x-axis is the f
 
 * The code will generate `linear_1.png` and `Results_linear_1.npz`, which you will include in your submission.
 
-* You may play with other commands by (1) removing `--save` (2) changing the `--polynomial 1` to a non-negative integer (e.g, 2, 3, ..., 15). You will see that, while larger values lead to smaller training errors, the test error is not necessarily lower. For very large value, the test error can go very large.
+* You may play with other commands by (1) removing `--save` (2) changing the `--polynomial 1` to a non-negative integer (e.g, 2, 3, ..., 13). You will see that, while larger values lead to smaller training errors, the test error is not necessarily lower. For very large value, the test error can go very large.
 
-
-## Play with different datasets (Task 2 - quadratic data):
+## Play with different datasets (Task 2 - quadratic data, 5/25 pts):
 
 * Please run the following command<br/>
 `python3 LR.py --data quadratic --polynomial 2 --display --save`<br/>
@@ -200,7 +199,7 @@ This command will run linear regression on a 1D quadratic data (the x-axis is th
 
 * The code will generate `quadratic_2.png` and `Results_quadratic_2.npz`, which you will include in your submission.
 
-* You may play with other commands by (1) removing `--save` (2) changing the `--polynomial 2` to a non-negative integer (e.g, 1, 3, ..., 15). You will see that, while larger values lead to smaller training error, the test error is not neccessarily lower. For very large value, the test error can go verly large.
+* You may play with other commands by (1) removing `--save` (2) changing the `--polynomial 2` to a non-negative integer (e.g, 1, 3, ..., 13). You will see that, while larger values lead to smaller training error, the test error is not neccessarily lower. For very large value, the test error can go verly large.
 
 ## What to submit:
 
