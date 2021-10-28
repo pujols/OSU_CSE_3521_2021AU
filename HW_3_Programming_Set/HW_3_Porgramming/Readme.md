@@ -80,10 +80,10 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 
 		* Debugging Tips: print the variable `self.prior` and check if it is storing the the expected probablity values for that class.
 
-	* [`def predict(self, test_sentence):`](./NaiveBayes/NaiveBayes.py#L119). 
+	* [`def predict(self, test_sentence):`](./NaiveBayes/NaiveBayes.py#L127). 
 		* You have to find the **log** probability (see details in the `HW_3_How_To.pptx` slides) for each class label for each given `test_sentence` and store them in the `label_probability` variable. Remember we have 3 labels in this dataset: Positive(+1), Negative(-1), Neutral (0).
 		
-		* Debugging Tips: print the variable [`label_probability`](./NaiveBayes/NaiveBayes.py#L138) and check if it is returning the expected values.
+		* Debugging Tips: print the variable [`label_probability`](./NaiveBayes/NaiveBayes.py#L157) and check if it is returning the expected values.
 
 * **You may create a function in [`class NaiveBayesClassifier(object):`](./NaiveBayes/NaiveBayes.py#L60) to build the binary BoW representation for each sentence.**
 
@@ -97,7 +97,7 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 
 * You might see a warning like `RuntimeWarning: divide by zero encountered in log`. No worries for now. Your code will proceed to output the results.
 
-* You should achieve an accuracy around 74%. 
+* The code will run for about 1 minute. You should achieve an accuracy around 74%. 
 
 * Note that, the auto grader is to check your implementation semantics. If you have syntax errors, you may get python error messages before you can see the auto_graders' results.
 
