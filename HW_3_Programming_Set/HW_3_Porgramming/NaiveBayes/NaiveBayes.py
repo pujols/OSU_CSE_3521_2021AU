@@ -92,10 +92,13 @@ class NaiveBayesClassifier(object):
         return V_dictionary
 
     def train(self, training_sentences, training_labels):
+        
+        # See the HW_3_How_To.pptx for details
+        
         # Get number of sentences in the training set
         N_sentences = len(training_sentences)
 
-        # This will turn the training_sentences into the format described in the PPT
+        # This will turn the training_sentences into the format described in the HW_3_How_To.pptx
         training_set = self.word_tokenization_dataset(training_sentences)
 
         # Get vocabulary (dictionary) used in training set
@@ -105,8 +108,7 @@ class NaiveBayesClassifier(object):
         all_classes = set(training_labels)
 
         #-----------------------#
-        #-------- TO DO --------#
-        #-------- TO DO --------#
+        #-------- TO DO (begin) --------#
         # Note that, you have to further change each sentence in training_set into a binary BOW representation, given self.V
 
         # Compute the conditional probabilities and priors from training data, and save them in:
@@ -114,26 +116,43 @@ class NaiveBayesClassifier(object):
         # self.conditional
         # You can use any data structure you want.
         # You don't have to return anything. self.conditional and self.prior will be called in def predict():
+
+
+
+
+
+        # -------- TO DO (end) --------#
         
 
     def predict(self, test_sentence):
+
+        # The input is one test sentence. See the HW_3_How_To.pptx for details
+        
+        # Your are going to save the log probability for each class of the test sentence. See the HW_3_How_To.pptx for details
         label_probability = {
             0: 0,
             1: 0,
             -1:0,
         }
 
-        # This will tokenize the test_sentence. test_sentence[n] will be the "n-th" word in a sentence (n starts from 0)
+        # This will tokenize the test_sentence: test_sentence[n] will be the "n-th" word in a sentence (n starts from 0)
         test_sentence = self.word_tokenization_sentence(test_sentence)
 
         #-----------------------#
-        #-------- TO DO --------#
-        #-------- TO DO --------#
-        # Based on test_sentence, please first turn it into the binary BOW representation (given self.V) and compute the log probability
+        #-------- TO DO (begin) --------#
+        # Based on the test_sentence, please first turn it into the binary BOW representation (given self.V) and compute the log probability
+        # Please then use self.prior and self.conditional to calculate the log probability for each class. See the HW_3_How_To.pptx for details 
 
         # Return a dictionary of log probability for each class for a given test sentence:
-        # i,e, {0: -39.39854137691295, 1: -41.07638511893377, -1: -42.93948478571315}
-        # Please follow the PPT to first perform log (you may use np.log) to each probability terms and sum them.
+        # e.g., {0: -39.39854137691295, 1: -41.07638511893377, -1: -42.93948478571315}
+        # Please follow the PPT to first perform log (you may use np.log) to each probability term and sum them.
+
+
+
+
+
+
+        # -------- TO DO (end) --------#
 
         return label_probability
 
@@ -149,11 +168,4 @@ if __name__ == '__main__':
     NBclassifier.train(training_sentences,training_labels)
 
     results, acc = evaluate_predictions(test_sentences, test_labels, NBclassifier)
-
-
-    # Please list your collaborators here:
-    # E.g., Wei-Lun Chao, chao.209
-    # ...
-
-
 
