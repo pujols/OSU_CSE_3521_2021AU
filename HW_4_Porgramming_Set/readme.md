@@ -54,6 +54,7 @@ We have provided slides for implementation details in [`HW-4.pptx`](./HW-4.pptx)
 * **NOTE-3:** We have concatenate "1" to the end of each data instance. Thus, the linear classifier can be represented as `sign(w^T * x)`, where `^T` means transpose and `w` has included `b` in its last element.
 
 
+
 # Logistic Regression (30 points)
 
 Recall the logistic regression algorithm that we have discussed in class. Your task will be to implement logistic regression with gradient descent by completing the following sections in `Linear_Classifiers.py`. 
@@ -65,13 +66,13 @@ Recall the logistic regression algorithm that we have discussed in class. Your t
 * There are many sub-functions in  [`Linear_Classifiers.py`](./Linear_Classifiers.py). You can ignore all of them except the following two:
 	* [`def Logisitc_Regression(X, Y, learningRate=0.01, maxIter=100):`](./Linear_Classifiers.py#L90)
     		
-		* Your implementation should go to [`####### TODO: implement logistic regression`](./Linear_Classifiers.py#L107). **Your implementation should be fewer than 10 lines.**
+		* Your implementation should go to [`####### TODO: implement logistic regression`](./Linear_Classifiers.py#L107). **Your implementation should be fewer than 15 lines.**
 	
 	* [`def sigmoid(a):`](./Linear_Classifiers.py#L86)
     		
 		* This is the element-wise sigmoid function that you may find useful. The function takes a value, a vector, or a matrix as input and performs the sigmoid fuction to each element independently. 
 
-* After your implementation, you can run
+* After your implementation, you can first run the following command on the simple 2-dimensional data for a fast check:
 
 ```
 python3 Linear_Classifiers.py --data simple --algorithm logistic
@@ -80,6 +81,9 @@ python3 Linear_Classifiers.py --data simple --algorithm logistic
 You will see your accuracy around
   * Accuracy: training set: around 1.0
   * Accuracy: training set: around 1.0
+
+
+* You can further run the following command on the starplus data:
 
 ```
 python3 Linear_Classifiers.py --data starplus --algorithm logistic
@@ -101,9 +105,9 @@ Recall the perceptron algorithm that we have discussed in class. Your task will 
 
 * There are many sub-functions in  [`Linear_Classifiers.py`](./Linear_Classifiers.py). You can ignore all of them except the following one:
 	* [def Perceptron(X, Y, learningRate=0.01, maxIter=100):](./Linear_Classifiers.py#L116)
-	* Your implementation should go to [`####### TODO: implement perceptron`](./Linear_Classifiers.py#L138). **Your implementation should be fewer than 10 lines.**
+	* Your implementation should go to [`####### TODO: implement perceptron`](./Linear_Classifiers.py#L138). **Your implementation should be fewer than 15 lines.**
 
-* After your implementation, you can run
+* After your implementation, you can first run the following command on the simple 2-dimensional data for a fast check:
 
 ```
 python3 Linear_Classifiers.py --data simple --algorithm perceptron
@@ -112,6 +116,9 @@ python3 Linear_Classifiers.py --data simple --algorithm perceptron
 You will see your accuracy around
   * Accuracy: training set: around 1.0
   * Accuracy: training set: around 1.0
+
+
+* You can further run the following command on the starplus data
 
 ```
 python3 Linear_Classifiers.py --data starplus --algorithm perceptron
@@ -126,10 +133,10 @@ You will see your accuracy around
 # What to submit:
 
 * Your completed python script `Linear_Classifiers.py`. 
-* Your report `name.number.pdf`. The report should contain the following five answers: 
+* Your report `HW4_programming_name_number.pdf`. The report should contain the following four answers: 
 	* **(1)** the output from `python3 Linear_Classifiers.py --data simple --algorithm logistic` (i.e., training and test accuracy),
 	* **(2)** the output from `python3 Linear_Classifiers.py --data starplus --algorithm logistic` (i.e., training and test accuracy),
 	* **(3)** the output from `python3 Linear_Classifiers.py --data simple --algorithm perceptron` (i.e., training and test accuracy),
 	* **(4)** the output from `python3 Linear_Classifiers.py --data starplus --algorithm perceptron` (i.e., training and test accuracy),
-	* **(5)** any other students you collaborate with.
-* Please follow **Submission instructions** to submit a .zip file named name.number.zip (e.g., chao.209.zip), which contains the above two files.
+* A `collaboration.txt` which lists with whom you have discussed the homework. 
+* Please follow **Submission instructions** to submit a .zip file named HW4_programming_name_number.zip (e.g., HW4_programming_chao_209.zip), which contains the above three files.
