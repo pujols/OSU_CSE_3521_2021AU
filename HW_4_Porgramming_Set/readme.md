@@ -53,6 +53,12 @@ We have provided slides for implementation details in [`HW-4.pptx`](./HW-4.pptx)
 
 * **NOTE-3:** We have concatenate "1" to the end of each data instance. Thus, the linear classifier can be represented as `sign(w^T * x)`, where `^T` means transpose and `w` has included `b` in its last element.
 
+* **NOTE-4:** I didn't set a stop criterion for the for loop, so you just need to let the program run for maxIter rounds.
+
+* **NOTE-5:** Please take `w = np.zeros((D_plus_1, 1))` as your initialized `w` before the for loop starts.
+
+* **NOTE-6:** Please do not change the random seed.
+
 
 
 # Logistic Regression (30 points)
@@ -66,7 +72,7 @@ Recall the logistic regression algorithm that we have discussed in class. Your t
 * There are many sub-functions in  [`Linear_Classifiers.py`](./Linear_Classifiers.py). You can ignore all of them except the following two:
 	* [`def Logisitc_Regression(X, Y, learningRate=0.01, maxIter=100):`](./Linear_Classifiers.py#L90)
     		
-		* Your implementation should go to [`####### TODO: implement logistic regression`](./Linear_Classifiers.py#L107). **Your implementation should be fewer than 15 lines.**
+		* Your implementation should go to [`####### TODO: implement logistic regression`](./Linear_Classifiers.py#L107). **Your implementation should be fewer than 10 lines.**
 	
 	* [`def sigmoid(a):`](./Linear_Classifiers.py#L86)
     		
@@ -105,7 +111,7 @@ Recall the perceptron algorithm that we have discussed in class. Your task will 
 
 * There are many sub-functions in  [`Linear_Classifiers.py`](./Linear_Classifiers.py). You can ignore all of them except the following one:
 	* [def Perceptron(X, Y, learningRate=0.01, maxIter=100):](./Linear_Classifiers.py#L116)
-	* Your implementation should go to [`####### TODO: implement perceptron`](./Linear_Classifiers.py#L138). **Your implementation should be fewer than 15 lines.**
+	* Your implementation should go to [`####### TODO: implement perceptron`](./Linear_Classifiers.py#L138). **Your implementation should be fewer than 10 lines.**
 
 * After your implementation, you can first run the following command on the simple 2-dimensional data for a fast check:
 
