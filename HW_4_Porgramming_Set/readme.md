@@ -2,21 +2,24 @@
 
 ## Submission instructions
 
-* Due date and time: December 4 (Friday), 23:59 ET
+* Due date and time: December 8 (Wednesday), 23:59 ET
 
 * Carmen submission: 
-Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`), which contains the following files
+Submit a .zip file named `HW4_programming_name_number.zip` (e.g., HW4_programming_chao_209.zip), which contains
   - your completed python script `Linear_Classifiers.py`
-  - A short report (no more than one page), saved as a pdf named `name.number.pdf` (see **What to submit** at the end)
+  - A short report (no more than one page), saved as a pdf named `HW4_programming_name_number.pdf` (see **What to submit** at the end)
+  - a `collaboration.txt` which lists with whom you have discussed the homework (see more details below). 
  
-* Collaboration: You may discuss the homework with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework. Please list each classmate's name and name.number (e.g., Wei-Lun Chao, chao.209) in the short report. Please consult the syllabus for what is and is not acceptable collaboration.
+* Collaboration: You may discuss the homework with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework in a .txt file `collaboration.txt`. Please list each classmate’s name and name.number (e.g., Wei-Lun Chao, chao.209) as a row in the .txt file. That is, if you discussed with two classmates, your .txt file will have two rows. If you did not discuss with your classmates, just write "no discussion" in `collaboration.txt`. Please consult the syllabus for what is and is not an acceptable collaboration.
 
 
 ## Implementation instructions
 
 * Download or clone this repository.
 
-* You will see the python file name `Linear_Classifiers.py`
+* You will see a python file name `Linear_Classifiers.py`
+
+* You will see a PPT file named `HW-4.pptx`
 
 * Download the data `Starplus.npz` from Carmen (which is under `Files/Homework 4`) and put it in the same folder as `Linear_Classifiers.py`
 
@@ -24,10 +27,9 @@ Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`), which contain
 
 * **Caution! python and NumPy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.**
 
-* If you use Windows, we recommend that you run the code in the Windows command line. You may use `py -3` instead of `python3` to run the code.
+* We note that, the provided commands are designed to work with Mac/Linux with Python version 3. If you use Windows (like me!), we recommend that you run the code in the Windows command line (CMD). You may use `py -3` instead of `python3` to run the code. You may use editors like PyCharm to write your code.
 
 * Caution! Please do not import packages (like scikit learn or nltk) that are not listed in the provided code. Follow the instructions in each question strictly to code up your solutions. Do not change the output format. Do not modify the code unless we instruct you to do so. (You are free to play with the code but your submitted code should not contain those changes that we do not ask you to do.) A homework solution that does not match the provided setup, such as format, name, initializations, etc., will not be graded. It is your responsibility to make sure that your code runs with the provided commands and scripts.
-
 
 
 # Introduction
@@ -39,11 +41,11 @@ We have provided slides for implementation details in [`HW-4.pptx`](./HW-4.pptx)
 
 ## Data: 
 
-* The binary classification is about whether a human subject is viewing a picture or reading a sentence from their fMRI brain image data. The data comes from the [starplus dataset](http://www.cs.cmu.edu/afs/cs.cmu.edu/project/theo-81/www/) (only the first subject). 
+* The binary classification is about whether a human subject is viewing a picture or reading a sentence, using their fMRI brain image data as input. The data comes from the [starplus dataset](http://www.cs.cmu.edu/afs/cs.cmu.edu/project/theo-81/www/) (only the first subject). 
 
 * We have converted the matlab format data into Python/Numpy arrays (i.e., `Starplus.npz`). 
 
-* Each data instance is a brain image that we have flattened into a feature vector `X[:, n]` (either in `X_train` or `X_test`). That is, a data instance is a column vector. Your task is to train a classifier that outputs the predicted label. The values of predicted/true label `y` are: {+1,-1}, which correspond to whether the subject was shown a picture or a sentence.
+* Each data instance is a brain image that we have flattened into a feature vector `X[:, n]` (both `X_train` or `X_test` are in this format already). That is, a data instance is a column vector. Your task is to train a classifier that outputs the predicted label. The values of predicted/true label `y` are: `{+1,-1}`, which correspond to whether the subject was shown a picture or a sentence.
 
 * **NOTE-1:** It may take some time to run the experiments for this assignment, so we recommend that you start early. 
 
@@ -52,8 +54,7 @@ We have provided slides for implementation details in [`HW-4.pptx`](./HW-4.pptx)
 * **NOTE-3:** We have concatenate "1" to the end of each data instance. Thus, the linear classifier can be represented as `sign(w^T * x)`, where `^T` means transpose and `w` has included `b` in its last element.
 
 
-
-# Logistic Regression (50 points)
+# Logistic Regression (30 points)
 
 Recall the logistic regression algorithm that we have discussed in class. Your task will be to implement logistic regression with gradient descent by completing the following sections in `Linear_Classifiers.py`. 
 
@@ -90,7 +91,7 @@ You will see your accuracy around
 
 
 
-# Perceptron (50 points)
+# Perceptron (30 points)
 
 Recall the perceptron algorithm that we have discussed in class. Your task will be to implement perceptron by completing the following sections in `Linear_Classifiers.py`. 
 
